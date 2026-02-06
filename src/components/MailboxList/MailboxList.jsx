@@ -5,7 +5,7 @@ const MailboxList = (props) =>{
 console.log('This is the prop', props)
 
     return (
-        <>
+        <main>
         <h1>MailboxList</h1>
         <div>
             {props.mailboxes.length === 0 ? (
@@ -21,7 +21,7 @@ console.log('This is the prop', props)
 
             
         </div>
-        </>
+        </main>
 
     )
 }
