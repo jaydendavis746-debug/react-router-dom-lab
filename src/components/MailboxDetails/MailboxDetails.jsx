@@ -14,9 +14,14 @@ const MailboxDetails = (props)=>{
   ))
 console.log('Mailbox Object ', singleMailbox)
 
+  if (!singleMailbox) {
+    return <h2>No mailbox found</h2>;
+  }
+
 return(
 
 <>
+
 <h1>Mailbox {singleMailbox._id} </h1>
 <h2>Details</h2>
 <dl>
